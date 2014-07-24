@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+ 
+<hibernate-mapping package="com.waylau.rest.bean">
+
+<!--     <class name="User" table="T_USER"> -->
+	<class name="User" table="T_USER" > 
+        <id name="userId" column="USERID"  type="string" >
+            <generator class="assigned"/>
+        </id>
+        <property name="userName" type="string" />
+        <property name="age" type="string" />
+    </class>
+ 
+</hibernate-mapping> 

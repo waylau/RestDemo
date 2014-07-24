@@ -28,3 +28,12 @@ RestDemo
  6.用Jersey构建RESTful服务6–Jersey+SQLServer+Hibernate4.3
  
   http://www.waylau.com/jersey-sqlserver-hibernate4/
+
+
+例子代码是eclipse项目。相关jar没有上传，自行下载
+  
+##版本：
+  
+* Jersey 2.11
+* MySQL5.6
+* Hibernate4.3.5 final
