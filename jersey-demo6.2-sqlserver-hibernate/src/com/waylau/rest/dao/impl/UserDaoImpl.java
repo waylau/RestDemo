@@ -115,8 +115,8 @@ public class UserDaoImpl implements UserDao {
 		 t = s.beginTransaction();
 		 String hql = "select * from [RestDemo].dbo.t_user";  
 		 Query query = s.createSQLQuery(hql).addEntity(User.class);  
-//		 String hql = " from User";  
-//         Query query = s.createQuery(hql);  
+		// String hql = " from User";  
+		 //Query query = s.createQuery(hql);  
          //query.setCacheable(true); // 设置缓存  
          uesrs = query.list();  
 		 t.commit();

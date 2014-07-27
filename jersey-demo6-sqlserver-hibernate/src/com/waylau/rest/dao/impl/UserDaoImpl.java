@@ -103,7 +103,8 @@ public class UserDaoImpl implements UserDao {
 		}
 		return flag;
 	}
-
+	
+    @SuppressWarnings("unchecked")
 	@Override
 	public List<User> getAllUsers() {
         SessionFactory sessionFactory = HibernateUtil.getSessionFactory(); 

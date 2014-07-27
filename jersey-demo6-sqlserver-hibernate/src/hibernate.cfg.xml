@@ -10,7 +10,8 @@
         <property name="connection.url">jdbc:jtds:sqlserver://192.168.1.10:1433;RestDemo</property>  
         <property name="connection.username">sa</property>  
         <property name="connection.password">aA123456</property>  
- 
+        
+ 		<property name="hibernate.default_schema">RestDemo.dbo</property>
         <!-- JDBC connection pool (use the built-in) -->  
         <property name="connection.pool_size">1</property>  
         <!-- SQL dialect -->  
