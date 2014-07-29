@@ -37,3 +37,6 @@ RestDemo
 * Jersey 2.11
 * MySQL5.6
 * Hibernate4.3.5 final
+* Spring 3.2.3.RELEASE
+* jQuery 1.7.1 
+ 
