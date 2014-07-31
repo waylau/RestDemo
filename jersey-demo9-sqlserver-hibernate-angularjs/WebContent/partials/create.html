@@ -1,0 +1,69 @@
+
+
+
+<div class="page-header">
+	<h3>Create</h3>
+</div>
+
+<form role="form" name="userForm">
+  
+     <div class="row">&nbsp;</div>
+     <div class="row" ng-class="{'has-error': userForm.userId.$invalid}">
+      <div class="col-md-1">
+        <i ng-show="userForm.url.$error.required" 
+          class="glyphicon glyphicon-pencil"></i>
+        <label for="urlInput">userId</label>
+      </div>
+      <div class="col-md-4">
+        <input 
+          type="test" 
+          class="form-control" id="urlInput"
+          name="userId" ng-model="user.userId" required> 
+      </div>
+    </div>
+    <div class="row">&nbsp;</div>
+    
+    <div class="row" ng-class="{'has-error': userForm.userName.$invalid}">
+      <div class="col-md-1">
+        <i ng-show="userForm.userName.$error.required" 
+          class="glyphicon glyphicon-pencil"></i>
+        <label for="nameInput">userName</label>
+      </div>
+      <div class="col-md-4">
+        <input 
+          type="text" 
+          class="form-control error" id="nameInput"
+          name="userName" 
+          ng-model="user.userName" 
+          required> 
+      </div>      
+    </div>
+    
+    <div class="row">&nbsp;</div>
+    <div class="row" ng-class="{'has-error': userForm.url.$invalid}">
+      <div class="col-md-1">
+        <i ng-show="userForm.url.$error.required" 
+          class="glyphicon glyphicon-pencil"></i>
+        <label for="urlInput">age</label>
+      </div>
+      <div class="col-md-4">
+        <input 
+          type="text" 
+          class="form-control" id="urlInput"
+          name="age" ng-model="user.age" required>
+      </div>
+    </div>
+
+    
+ 
+
+    <div class="row" ng-hide="showConfirm">
+      <div class="col-md-5">
+        <a href="#users" class="btn">Cancel</a>
+        <button 
+          ng-click="add()" 
+          ng-disabled="isClean() || userForm.$invalid"
+          class="btn btn-primary">Save</button>
+ 
+      </div>
+    </div>
