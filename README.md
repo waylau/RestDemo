@@ -1,7 +1,7 @@
 RestDemo
 ========
 
- RESTful Web Service DemoS  with Jersey ,Hibernate,Mysql,Spring,JQuery,AngularJS
+ RESTful Web Service DemoS  with Jersey ,Hibernate,Mysql,Spring,JQuery,AngularJS...Follow me to create a completed web app. Just go go go !
  
  Here are my articles about how to build the project step by step, and every demo is a small project :
  
@@ -29,7 +29,7 @@ RestDemo
  
   http://www.waylau.com/jersey-sqlserver-hibernate4/
   
- 7.用Jersey构建RESTful服务7--Jersey+SQLServer+Hibernate4.3+Ppring3.2
+ 7.用Jersey构建RESTful服务7--Jersey+SQLServer+Hibernate4.3+Spring3.2
  
   http://www.waylau.com/jersey-sqlserver-hibernate4-spring3/
  
@@ -49,4 +49,5 @@ RestDemo
 * Spring 3.2.3.RELEASE
 * jQuery 1.7.1 
 * angularJS 1.2.3
+* bootstrap 3.1.1
  
