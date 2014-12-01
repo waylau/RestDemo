@@ -41,6 +41,8 @@ RestDemo
 
   http://www.waylau.com/jersey-sqlserver-hibernate4-spring3-angular/
 
+
+
 ##版本：
   
 * Jersey 2.11
@@ -50,4 +52,18 @@ RestDemo
 * jQuery 1.7.1 
 * angularJS 1.2.3
 * bootstrap 3.1.1
- 
+ ---------------------------------------------------
+
+10.用 Jersey 2 和 Spring 4 构建 RESTful web service
+
+  http://www.waylau.com/jersey-2-spring-4-rest/
+
+##版本：
+
+* Jersey 2.9
+* Spring 4.0.3
+* Hibernate 4
+* Maven 3
+* Tomcat 7
+* Jetty 9
+* MySql 5.6
