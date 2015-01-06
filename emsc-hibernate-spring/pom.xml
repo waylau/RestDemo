@@ -148,13 +148,6 @@
 		</dependency>
 		<!-- spring end -->
 
-		<!-- logging start -->
-		<dependency>
-			<groupId>log4j</groupId>
-			<artifactId>log4j</artifactId>
-			<version>1.2.14</version>
-		</dependency>
-		<!-- logging end -->
 		<!-- hibernate start -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
@@ -192,6 +185,13 @@
 		</dependency>
 		<!-- MySQL JDBC connector end -->
 
+		<!-- logging start -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.14</version>
+		</dependency>
+		<!-- logging end -->
 		<!-- ehcache start -->
 		<dependency>
 			<groupId>net.sf.ehcache</groupId>
