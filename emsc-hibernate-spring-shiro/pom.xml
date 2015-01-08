@@ -48,6 +48,16 @@
 
 		<dependency>
 			<groupId>org.glassfish.jersey.ext</groupId>
+			<artifactId>jersey-mvc-bean-validation</artifactId>
+			<version>${jersey.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.jersey.ext</groupId>
+			<artifactId>jersey-mvc</artifactId>
+			<version>${jersey.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.jersey.ext</groupId>
 			<artifactId>jersey-spring3</artifactId>
 			<version>${jersey.version}</version>
 			<exclusions>
@@ -184,7 +194,13 @@
 			<version>5.1.34</version>
 		</dependency>
 		<!-- MySQL JDBC connector end -->
-
+		<!-- commons-codec start -->
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<version>1.10</version>
+		</dependency>
+		<!-- commons-codec end -->
 		<!-- logging start -->
 		<dependency>
 			<groupId>log4j</groupId>

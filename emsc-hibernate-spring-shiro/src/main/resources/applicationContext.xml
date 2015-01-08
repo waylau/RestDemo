@@ -110,4 +110,6 @@
 		<aop:advisor advice-ref="txAdvice" pointcut-ref="serviceOperation" />
 	</aop:config>
  
+  <!-- 引用各模块的spring配置文件 -->  
+ 	<import resource="spring-shiro.xml"></import>  
 </beans>

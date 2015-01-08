@@ -38,8 +38,11 @@ public class ShiroDbRealm extends AuthorizingRealm {
         String username = (String)principals.getPrimaryPrincipal();
 
         SimpleAuthorizationInfo authorizationInfo = new SimpleAuthorizationInfo();
-        Set<String> permissions = userService.findPermissions(username);
-        permissions.forEach(item->System.out.println(item));
+        //Set<String> permissions = userService.findPermissions(username);
+       // permissions.forEach(item->System.out.println(item));
+        Set<String> permissions  = new HashSet<String>();
+        permissions.add("create");
+        permissions.add("delete");
         authorizationInfo.setStringPermissions(permissions);
         return authorizationInfo;
     }
@@ -61,7 +64,8 @@ public class ShiroDbRealm extends AuthorizingRealm {
         SimpleAuthenticationInfo authenticationInfo = new SimpleAuthenticationInfo(
                 user.getUsername(), //用户名
                 user.getPassword(), //密码
-                ByteSource.Util.bytes(user.generateCredentialsSalt()),//salt=username+salt
+                //ByteSource.Util.bytes(user.generateCredentialsSalt()),//salt=username+salt
+                ByteSource.Util.bytes( user.getUsername()+  user.getPassword()),
                 getName()  //realm name
         );
         return authenticationInfo;
