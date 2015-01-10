@@ -78,8 +78,6 @@
 	</bean>
 
 
-	<!-- 扫描有注解的文件 base-package 包路径 -->
-	<context:component-scan base-package="com" />
 
 	<tx:advice id="txAdvice" transaction-manager="transactionManager">
 		<tx:attributes>
@@ -111,5 +109,9 @@
 	</aop:config>
  
   <!-- 引用各模块的spring配置文件 -->  
- 	<import resource="spring-shiro.xml"></import>  
+<!--  	<import resource="applicationContext-shiro.xml"></import>   -->
+ 	
+ 	
+	<!-- 扫描有注解的文件 base-package 包路径 -->
+	<context:component-scan base-package="com.*" />
 </beans>
