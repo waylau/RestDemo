@@ -3,29 +3,30 @@ package com.emsc.resource;
 import java.util.Collections;
 
 import javax.ws.rs.FormParam;
+import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
- 
 import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
+
+
+
+
+
+
+
+
 
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.UsernamePasswordToken;
-import org.apache.shiro.session.Session;
 import org.apache.shiro.subject.Subject;
 //import org.glassfish.jersey.server.mvc.Template;
 //import org.glassfish.jersey.server.mvc.Viewable;
 import org.springframework.stereotype.Component;
- 
 
 import com.waylau.entity.ResultBean;
-import com.waylau.exception.WebApplicationException;
-import com.waylau.util.Constants;
 import com.waylau.util.EncryptUtils;
-import com.waylau.util.Md5Utils;
-
  
 
 /**
@@ -74,5 +75,4 @@ public class LoginResource {
 		return resultBean;
 		
 	}
- 
 }

@@ -16,7 +16,7 @@ import com.emsc.entity.SdUser;
  * @author waylau.com 2015年1月3日
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = { "classpath:applicationContext.xml" })
+@ContextConfiguration(locations = { "classpath:applicationContext.xml","classpath:applicationContext-shiro.xml"  })
 @Transactional
 public class SdUserDaoImplTest {
 

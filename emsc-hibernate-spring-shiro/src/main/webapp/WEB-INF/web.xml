@@ -10,7 +10,7 @@
 	<!-- spring start -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>classpath:applicationContext*.xml</param-value>
+		<param-value>classpath:applicationContext.xml</param-value>
 	</context-param>
 
 	<listener>
@@ -38,7 +38,21 @@
 	<!-- spring end -->
 
 	<!-- shiro start -->
- 
+	<!-- filter-name对应applicationContext.xml中定义的名字为“shiroFilter”的bean -->
+	<filter>
+		<filter-name>shiroFilter</filter-name>
+		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+		<init-param>
+			<param-name>targetFilterLifecycle</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+
+	<!-- 使用“/*”匹配所有请求，保证所有的可控请求都经过Shiro的过滤。通常这个filter-mapping 放置到最前面(其他filter-mapping前面)，保证它是过滤器链中第一个起作用的 -->
+	<filter-mapping>
+		<filter-name>shiroFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
 	<!-- shiro end -->
 	<!-- jersey start -->
 	<servlet>

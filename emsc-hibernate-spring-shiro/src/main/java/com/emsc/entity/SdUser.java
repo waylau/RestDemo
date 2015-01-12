@@ -30,8 +30,6 @@ public class SdUser implements java.io.Serializable {
 	private String username;
 	private String password;
 
-//
-//	private String userToken;
 	public SdUser() {
 	}
 
@@ -78,13 +76,5 @@ public class SdUser implements java.io.Serializable {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-
-//	public String getUserToken() {
-//		return userToken;
-//	}
-//
-//	public void setUserToken(String userToken) {
-//		this.userToken = userToken;
-//	}
 
 }
