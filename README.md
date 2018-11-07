@@ -1,4 +1,4 @@
-REST Demos.（REST 案例大全）
+REST Demo.（REST 案例大全）
 ========
 
  RESTful Web Service DemoS  with Jersey ,Hibernate,Mysql,Spring,JQuery,AngularJS...Follow me to create a completed web app. Just go go go !
